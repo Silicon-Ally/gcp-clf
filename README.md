@@ -1,5 +1,8 @@
 # GCP Cloud Logging -> Combined Log Format
 
+[![GoDoc](https://pkg.go.dev/badge/github.com/Silicon-Ally/gcp-clf?status.svg)](https://pkg.go.dev/github.com/Silicon-Ally/gcp-clf?tab=doc)
+[![CI Workflow](https://github.com/Silicon-Ally/gcp-clf/actions/workflows/test.yml/badge.svg)](https://github.com/Silicon-Ally/gcp-clf/actions?query=branch%3Amain)
+
 This repo contains utilities for exporting request logs from Cloud Logging to the Combined Log Format.
 
 The Combined Log Format is just the [Common Log Format](https://en.wikipedia.org/wiki/Common_Log_Format) with two additional fields to record the [Referer](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Referer) and [User-Agent](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/User-Agent) of a request. This is the log format commonly used by [NGINX](https://nginx.org/en/docs/http/ngx_http_log_module.html) and [Apache](https://httpd.apache.org/docs/2.4/logs.html#combined) web servers, and so is supported by log processing tools like [GoAccess](https://goaccess.io/)
