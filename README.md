@@ -37,3 +37,8 @@ go run ./cmd/exporter stream <project ID> \
   | goaccess --log-format=COMBINED --real-time-html -o report.html -
 # Then open `report.html` in your web browser of choice.
 ```
+
+## Contributing
+
+Contribution guidelines can be found [on our website](https://siliconally.org/oss/contributor-guidelines).
+
